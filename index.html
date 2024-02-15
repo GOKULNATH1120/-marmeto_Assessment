@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Embrace Sideboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img id="mainImage" src="../Coding-assessment-l2-Boilerplate-code/images/Rectangle 4.svg" alt="Main Image">
+            <div class="image-grid">
+                <div class="image-item"><img src="../Coding-assessment-l2-Boilerplate-code/images/Rectangle 6.svg"
+                        alt="Image 2" onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../Coding-assessment-l2-Boilerplate-code/images/Rectangle 5.svg"
+                        alt="Image 1" onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../Coding-assessment-l2-Boilerplate-code/images/Rectangle 7.svg"
+                        alt="Image 3" onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../Coding-assessment-l2-Boilerplate-code/images/Rectangle 8.svg"
+                        alt="Image 4" onclick="updateMainImage(this)"></div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="marmeto-Title">Marmeto</div>
+            <div id="sideboard-Titte">Embrace Sideboard</div>
+            <hr color=" #E4E4E4">
+            <p class="discounted-price"> $12999.00 <span id="discount-Offer">35% Off</span></p>
+            <p class="price"><del>Price: $19999.00</del></p>
+            
+            <hr color=" #E4E4E4"> <!-- Horizontal line above Choose Color -->
+            <div class="color-selection">
+                <div class="choose-Color">Choose a color</div>
+                <div class="color-box" style="background-color: #ECDECC" onclick="selectColor('yellow', this)"></div>
+                <div class="color-box" style="background-color: #BBD278" onclick="selectColor('Green', this)"></div>
+                <div class="color-box" style="background-color: #BBC1F8" onclick="selectColor('Blue', this)"></div>
+                <div class="color-box" style="background-color: #FFD3F8" onclick="selectColor('Pink', this)"></div>
+            </div>
+            <hr color=" #E4E4E4"> <!-- Horizontal line below Choose Color -->
+            <div class="size-selection">
+                <h3 class="choose-Color">Choose Size:</h3>
+                <div class="radio-container">
+                    <input type="radio" id="sizeS" name="size" value="Small" onchange="selectSize(this.value)">
+                    <label for="sizeS">Small</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" id="sizeM" name="size" value="Medium" onchange="selectSize(this.value)">
+                    <label for="sizeM">Medium</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" id="sizeL" name="size" value="Large" onchange="selectSize(this.value)">
+                    <label for="sizeL">Large</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" id="sizeXL" name="size" value="Extra Large " onchange="selectSize(this.value)">
+                    <label for="sizeXL">Extra Large </label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" id="sizeXXL" name="size" value="XXL" onchange="selectSize(this.value)">
+                    <label for="sizeXXL">XXL</label>
+                </div>
+            </div>
+            
+
+
+            <div class="quantity-selection">
+                <div class="quantity-buttons-container">
+                    <div class="quantity-buttons">
+                        <button onclick="decrementQuantity()" >-</button>
+                        <span id="quantity">1</span>
+                        <button onclick="incrementQuantity()" >+</button>
+                    </div>
+                </div>
+                <button onclick="addToCart()" class="addCart">
+                    <img src="../Coding-assessment-l2-Boilerplate-code/images/Vector.svg" alt="Cart Icon"  id="cart-Icon">
+                    Add to Cart
+                </button>
+            </div>
+                    
+                    
+           
+              
+            <div id="cart"></div>
+            <hr color=" #E4E4E4"> <!-- Horizontal line below Choose Color -->
+            <p id="sideBoard-Text">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+
+            </p>
+        </div>
+       
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

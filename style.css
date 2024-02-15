@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#marmeto-Title{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #B9BBBF;
+
+}
+
+#sideboard-Titte{
+  font-family: Inter;
+font-size: 28px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+
+}
+
+
+.discounted-price{
+  font-family: Inter;
+font-size: 34px;
+font-weight: 700;
+margin-bottom: 0%;
+letter-spacing: 0em;
+text-align: left;
+color: #3A4980;
+
+}
+
+#discount-Offer{
+  font-family: Inter;
+font-size: 21px;
+font-weight: 400;
+width: 81px;
+height: 25px;
+top: 195px;
+left: 978px;
+
+letter-spacing: 0em;
+text-align: left;
+color: #FF000080;
+
+}
+
+.price{
+  font-family: Inter;
+font-size: 21px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+color: #00000080;
+
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+  margin: 0 100px 10px 0px; /
+}
+
+.image-item img {
+  margin-top: 30px;
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.offer {
+  color: green;
+}
+
+.color-selection {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+.radio-container {
+  display: inline-block;
+  background-color:  #F3F3F3;;
+  border-radius: 8px;
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin-right: 10px; /* Add some spacing between containers */
+}
+
+.radio-container input[type="radio"],
+.radio-container label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; /* Add some spacing between radio button and label */
+}
+
+
+.radio-container input[type="radio"]:checked ~ * {
+  color: #3A4980; /* Change the background color of the container */
+}
+
+
+
+
+
+/* button section */
+
+.quantity-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+
+}
+
+.quantity-buttons button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+height: 59px;
+cursor: pointer;
+border-radius: 29.5px;
+border: none;
+font-size: 30px;
+color: #3A4980;
+
+  
+}
+
+
+
+.quantity-buttons-container {
+  display: flex;
+  justify-content: center; /* Align buttons in the center horizontally */
+  align-items: center;
+  background-color: #ECDECC;
+  border-radius: 29.5px;
+  background: #F3F3F3;
+  font-size: 30px;
+  color: #3A4980;
+  margin-bottom: 30px;
+
+}
+
+
+ .addCart {
+  background-color: #3A4980;
+  color: white;
+  border: none;
+  margin-left: -20px;
+  width: 309px;
+  height: 59px;
+  top: 549px;
+  left: 966px;
+  border-radius: 29.5px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  margin-right: 150px;
+  margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+/* color box */
+.choose-Color{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #B9BBBF;
+margin-bottom: 20px;
+
+}
+.color-box {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid transparent;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.selected::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  background-color: inherit;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.selected {
+  border: 10px double #ECDECC; 
+  background-clip: padding-box; 
+}
+
+
+
+
+
+#sideBoard-Text{
+  font-family: Inter;
+font-size: 20px;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #A3A3A3;
+margin-top: 30px;
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+}
+
+
+#cart-Icon{
+  width: 15.53px;
+height: 17.06px;
+top: 1.97px;
+margin-right: 7px;
+
+
+
+}
