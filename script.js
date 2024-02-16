@@ -5,8 +5,8 @@ let selectedSize = '';
 function updateMainImage(selectedImage) {
     var mainImage = document.getElementById('mainImage');
     mainImage.src = selectedImage.src;
-    mainImage.style.width = '75%';
-    mainImage.style.height = '75%';
+    mainImage.style.width = '80%';
+    mainImage.style.height = 'auto';
 }
 
 function decrementQuantity() {
@@ -29,7 +29,7 @@ function addToCart() {
         item.style.backgroundColor = '#E7F8B7';
         item.style.fontWeight = "600"
         item.style.color = '#000000';
-        item.style.padding = '5px 10px'; // Add padding
+        item.style.padding = '5px '; // Add padding
         item.style.borderRadius = '8px'; // Add rounded corners
         cart.appendChild(item);
     } else {
