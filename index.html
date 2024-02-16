@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Embrace Sideboard</title>
 </head>
 
@@ -14,14 +17,14 @@
         <div class="left-panel">
             <img id="mainImage" src="../-marmeto_Assessment/images/Rectangle 4.svg" alt="Main Image">
             <div class="image-grid">
-                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 6.svg"
-                        alt="Image 2" onclick="updateMainImage(this)"></div>
-                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 5.svg"
-                        alt="Image 1" onclick="updateMainImage(this)"></div>
-                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 7.svg"
-                        alt="Image 3" onclick="updateMainImage(this)"></div>
-                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 8.svg"
-                        alt="Image 4" onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 6.svg" alt="Image 2"
+                        onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 5.svg" alt="Image 1"
+                        onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 7.svg" alt="Image 3"
+                        onclick="updateMainImage(this)"></div>
+                <div class="image-item"><img src="../-marmeto_Assessment/images/Rectangle 8.svg" alt="Image 4"
+                        onclick="updateMainImage(this)"></div>
             </div>
         </div>
         <div class="right-panel">
@@ -30,8 +33,8 @@
             <hr color=" #E4E4E4">
             <p class="discounted-price"> $12999.00 <span id="discount-Offer">35% Off</span></p>
             <p class="price"><del>$19999.00</del></p>
-            
-            <hr color=" #E4E4E4"> <!-- Horizontal line above Choose Color -->
+
+            <hr color=" #E4E4E4"> <!-- Horizontal line  -->
             <div class="color-selection">
                 <div class="choose-Color">Choose a color</div>
                 <div class="color-box" style="background-color: #ECDECC" onclick="selectColor('yellow', this)"></div>
@@ -39,7 +42,7 @@
                 <div class="color-box" style="background-color: #BBC1F8" onclick="selectColor('Blue', this)"></div>
                 <div class="color-box" style="background-color: #FFD3F8" onclick="selectColor('Pink', this)"></div>
             </div>
-            <hr color=" #E4E4E4"> <!-- Horizontal line below Choose Color -->
+            <hr color=" #E4E4E4"> <!-- Horizontal line below  -->
             <div class="size-selection">
                 <h3 class="choose-Color">Choose Size:</h3>
                 <div class="radio-container">
@@ -63,35 +66,38 @@
                     <label for="sizeXXL">XXL</label>
                 </div>
             </div>
-            
+
 
 
             <div class="quantity-selection">
                 <div class="quantity-buttons-container">
                     <div class="quantity-buttons">
-                        <button onclick="decrementQuantity()" >-</button>
+                        <button onclick="decrementQuantity()">-</button>
                         <span id="quantity">1</span>
-                        <button onclick="incrementQuantity()" >+</button>
+                        <button onclick="incrementQuantity()">+</button>
                     </div>
                 </div>
                 <button onclick="addToCart()" class="addCart">
-                    <img src="../-marmeto_Assessment/images/Vector.svg" alt="Cart Icon"  id="cart-Icon">
+                    <img src="../-marmeto_Assessment/images/Vector.svg" alt="Cart Icon" id="cart-Icon">
                     Add to Cart
                 </button>
             </div>
-                    
-                    
-           
-              
+
+
+
+
             <div id="cart"></div>
-            <hr color=" #E4E4E4"> <!-- Horizontal line below Choose Color -->
-            <p id="sideBoard-Text">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+            <hr color=" #E4E4E4"> <!-- Horizontal line  -->
+            <p id="sideBoard-Text">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide
+                superior protection and look great, this storage solution is both functional and attractive. It fits
+                seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for
+                a combination of style, durability, and reliability.
 
             </p>
         </div>
-       
+
     </div>
-    
+
 
     <script src="./script.js"></script>
 </body>
