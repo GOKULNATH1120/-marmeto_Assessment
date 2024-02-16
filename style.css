@@ -46,33 +46,33 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .image-item img {
-    width: 100px; /* Adjust image size for tablets */
+    width: 100px; 
   }
 
  
   .container {
     display: flex;
-    flex-direction: column; /* Change to column for mobile and tablet */
-    align-items: center; /* Center items for mobile and tablet */
+    flex-direction: column; 
+    align-items: center; 
   }
   
   .left-panel,
   .right-panel {
-    width: 100%; /* Take full width for mobile and tablet */
-    padding: 10px/* Adjust padding for smaller screens */
+    width: 100%; 
+    padding: 10px;
  
   }
   
   .image-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center images for mobile and tablet */
+    justify-content: center; 
    margin-right: 200px;
    gap: 2px;
   }
   
   .image-item img {
-    width: 70px; /* Adjust image size for smaller screens */
+    width: 70px; 
     height: auto;
     margin-right: 60px;
   }
@@ -90,35 +90,35 @@ body {
 .left-panel {
   width: 100%;
   padding: 10px;
-  text-align: center; /* Center align content */
+  text-align: center; 
 }
 
 #mainImage {
-  width: 80%; /* Adjust size as needed */
+  width: 80%; 
   margin-top: 20px;
-  margin-right: 40px; /* Add margin to separate from other elements */
+  margin-right: 40px; 
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four columns */
-  gap: 5px; /* Add gap between images */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px; 
   margin-top: 20px;
   margin-left: 50px;
 }
 
 .image-item img {
-  width: 100%; /* Occupy full width of column */
+  width: 100%; 
 }
 
 .right-panel {
   width: 100%;
   padding: 20px;
-  text-align: center; /* Center align content */
+  text-align: center; 
 }
 
-  
 }
+
 
 
 
@@ -205,6 +205,7 @@ color: #00000080;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 
@@ -216,26 +217,26 @@ color: #00000080;
 /* Media query for mobile */
 @media only screen and (max-width: 767px) {
   .size-selection {
-    text-align: center; /* Center align the radio buttons */
+    text-align: center; 
     width: 80%;
     margin-left: 25px;
   }
 
   .radio-container {
-    display: block; /* Display each radio button in a new line */
-    margin-bottom: 10px; /* Add space between radio buttons */
+    display: block; 
+    margin-bottom: 10px; 
   }
 
   .radio-container input[type="radio"],
   .radio-container label {
     margin-right: 0; 
-    /* Remove margin-right */
+
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .radio-container {
-    margin-right: 20px; /* Increase margin-right for tablet screens */
+    margin-right: 20px; 
   }
 }
 
@@ -310,29 +311,31 @@ color: #3A4980;
 }
 
 
-/* Media query for mobile */
+
+
+
 @media only screen and (max-width: 767px) {
   .quantity-selection {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items */
-  }
+    flex-direction: column; 
+    align-items: center; 
 
   .quantity-buttons {
-    flex-direction: row; /* Display quantity buttons in a row */
+    flex-direction: row; 
     margin-top: 0;
   }
 
   .addCart {
-    width: 50%; /* Auto width for the button */
-    margin-left: 20px; /* Add margin to separate from quantity buttons */
+    width: 50%; 
+    margin-left: 20px; 
     margin-right: 0;
   }
+}
 }
 
 /* Media query for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .quantity-buttons-container {
-    margin-bottom: 20px; /* Reduce margin bottom for tablet */
+    margin-bottom: 20px; 
   }
 
   .addCart {
@@ -427,6 +430,24 @@ margin-top: 30px;
 
 }
 
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+  #sideBoard-Text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  #sideBoard-Text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+}
+
 
 /* cart icon */
 
@@ -444,18 +465,18 @@ margin-right: 7px;
 
 @media only screen and (max-width: 767px) {
   #cart {
-    width: 360px; /* Full width on mobile */
-    height: 50px; /* Adjust height for mobile */
-    padding: 10px; /* Adjust padding for mobile */
-    margin: 5px; /* Add margin to separate from other elements */
+    width: 360px; 
+    height: 50px; 
+    padding: 10px;
+    margin: 5px; 
   }
 }
 
 /* Media query for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #cart {
-    width: 80%; /* Set a percentage width for tablet */
-    height: 180px; /* Adjust height for tablet */
-    margin: 20px auto; /* Center the cart horizontally with some margin */
+    width: 80%; 
+    height: 180px;
+    margin: 20px auto; 
   }
 }
